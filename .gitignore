@@ -1,0 +1,18 @@
+# 构建产物
+dist/
+*.exe
+*.dll
+*.zip
+
+# Go
+/bin/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*~
+
+# 系统文件
+Thumbs.db
+.DS_Store

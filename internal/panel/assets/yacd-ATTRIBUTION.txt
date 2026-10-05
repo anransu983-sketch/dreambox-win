@@ -1,0 +1,5 @@
+yacd 面板（Yacd-meta）
+上游项目：https://github.com/MetaCubeX/Yacd-meta（yacd 的 Meta 内核分支，gh-pages 构建，2026-10-05 获取）
+原 yacd 项目：https://github.com/hacdias/yacd（作者 hacdias）
+说明：上游 Yacd-meta 仓库未附带 LICENSE 文件；原 yacd 项目为 MIT 许可。
+本程序仅打包其前端 dist 静态文件，通过 mihomo external-ui 提供服务。

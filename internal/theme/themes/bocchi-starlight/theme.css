@@ -1,0 +1,47 @@
+/* 波奇酱·星空 — 粉色系主题（纯 CSS 实现，无图片）
+   配色取自 MyProbe bocchi-starlight：主粉 #ec4899，浅粉 #f472b6 / #f9a8d4，深紫底 #160a14 */
+
+:root{
+  --bg:#160a14; --side:#1d0e19; --card:#251423; --card2:#2f1a2d; --line:#4b2541;
+  --txt:#fdf2f8; --dim:#c08aa0;
+  --acc:#ec4899; --acc-dim:rgba(236,72,153,.14);
+  --warn:#f59e0b; --bad:#fb7185;
+  --radius:18px;
+  --on-accent:#ffffff; --logo1:#f472b6; --logo2:#db2777; --switch-off:#4b2541;
+  --chart-up:#f59e0b; --chart-down:#f472b6; --chart-fill:rgba(244,114,182,.13);
+  --log-bg:#110711; --log-fg:#e3a9c2; --toast-bg:#2f1a2d;
+  --bad-text:#fda4af; --warn-text:#fcd34d; --danger-border:#7f1d1d;
+}
+
+/* 星空：四层不同 tile 尺寸的星点，错开形成随机感 */
+body{
+  background-color:var(--bg);
+  background-image:
+    radial-gradient(1px 1px at 25px 35px, rgba(255,255,255,.9) 50%, transparent 51%),
+    radial-gradient(1.5px 1.5px at 120px 80px, rgba(255,217,232,.75) 50%, transparent 51%),
+    radial-gradient(1px 1px at 200px 150px, rgba(249,168,212,.8) 50%, transparent 51%),
+    radial-gradient(2px 2px at 80px 190px, rgba(255,255,255,.6) 50%, transparent 51%);
+  background-size:260px 260px, 340px 340px, 430px 430px, 540px 540px;
+}
+
+/* 侧栏半透明，透出星空 */
+#side{ background:rgba(29,14,25,.88); }
+
+/* 卡片：粉色微光 + 更大圆角 */
+.card{ box-shadow:0 0 28px rgba(236,72,153,.07); }
+
+/* splash 透明，透出星空 */
+#splash{ background:transparent; }
+.splash-title{ color:#ffd9e8; text-shadow:0 0 18px rgba(236,72,153,.55); }
+
+/* 当前导航项：粉色渐变胶囊 */
+#side nav button.on{
+  background:linear-gradient(135deg, rgba(236,72,153,.28), rgba(219,39,119,.18));
+}
+
+/* 主按钮：粉色渐变 */
+.btn.primary, .seg button.on{
+  background:linear-gradient(135deg, var(--logo1), var(--logo2));
+  border-color:transparent;
+  color:#fff;
+}
